@@ -59,3 +59,6 @@ def get_table():
             {"pair": "USD/JPY", "value": 149.20}
         ]
     }
+@app.get("/health")
+def health():
+    return {"status": "ok"}
